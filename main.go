@@ -11,6 +11,7 @@ import (
 
 
 func main() {
+	gin.SetMode("release")
 	r := gin.Default()
 	r.GET("/", rhelp)
 	r.GET("/ping", rping)
